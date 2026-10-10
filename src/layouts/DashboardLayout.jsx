@@ -5,14 +5,10 @@ import Sidebar from "../components/Sidebar";
 function DashboardLayout() {
     return (
         <>
-            <div className="main-container flex min-h-screen w-full ">
-                <div className="sidebar-container border w-[20%]">
-                    <Sidebar />
-                </div>
-                <div className="nav-main-container w-[80%]">
+            <div className="main-container min-h-screen w-full ">
+                <div className="nav-main-container w-[100%]">
                     <Navbar />
-
-                    <div className="main-container px-4 py-2">
+                    <div className="main-container w-[97%] mt-3 m-auto ">
                         <Outlet />
                     </div>
                 </div>
